@@ -1,0 +1,3 @@
+include azext_metadata.json
+include README.md
+recursive-include azext_aksbpa *
