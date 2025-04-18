@@ -1,36 +1,36 @@
-Azure CLI AKS Best Practice Assessment Extension
-This is an Azure CLI extension that performs Best Practice Assessments (BPA) on Azure Kubernetes Service (AKS) clusters.
-It evaluates your clusters against a set of recommendations based on the Azure Well-Architected Framework across five key pillars:
+# Azure CLI AKS Best Practice Assessment Extension
 
-✅ Reliability
+This is an Azure CLI extension that performs **Best Practice Assessments (BPA)** on Azure Kubernetes Service (AKS) clusters.  
+It evaluates your clusters against a set of recommendations based on the **[Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/architecture/framework/)** across five key pillars:
 
-🔐 Security
-
-💰 Cost Optimization
-
-⚙️ Operational Excellence
-
-🚀 Performance Efficiency (planned)
+- ✅ **Reliability**  
+- 🔐 **Security**  
+- 💰 **Cost Optimization**  
+- ⚙️ **Operational Excellence**  
+- 🚀 **Performance Efficiency** *(planned)*
 
 The goal is to help you identify gaps, improve configurations, and align your AKS environment with Microsoft-recommended architecture best practices.
 
-Features
-🔍 JSON-driven recommendation engine
+---
 
-💡 Support for deep cluster_info attribute checks
+## 🚀 Features
 
-📊 Azure Resource Graph (ARG) support for advanced queries
+- 🔍 JSON-driven recommendation engine  
+- 💡 Support for deep `cluster_info` attribute checks  
+- 📊 Azure Resource Graph (ARG) support for advanced queries  
+- 🟢 ✅ Passed / ❌ Failed / ⚠️ CouldNotValidated status mapping  
+- 🧪 CLI-friendly results view for easy scanning  
 
-🟢 ✅ Passed / ❌ Failed / ⚠️ CouldNotValidated status mapping
+---
 
-🧪 CLI-friendly results view for easy scanning
+## 📦 How to Install
 
-How to Install
 Install the extension using Azure CLI:
 
-bash
-
+```bash
 az extension add --source aks-bpa
+
+
 How to Use
 Run the assessment against your AKS cluster:
 
