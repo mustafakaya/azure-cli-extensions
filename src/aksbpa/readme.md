@@ -75,6 +75,14 @@ Cost Optimization  Choose the right VM size                               aks-pr
 
 ![image](https://github.com/user-attachments/assets/1d213ead-95b1-4f69-8562-f179997b5f65)
 
+##  📚 References
+This extension is built with guidance and recommendations inspired by:
+
+[Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/) 
+
+[Azure Proactive Resiliency Library (APRL)](https://azure.github.io/Azure-Proactive-Resiliency-Library-v2/welcome/)
+
+These resources serve as the foundation for many of the best practice checks implemented in the AKS BPA CLI extension.
 
 ## 🐞 Known Issues
 
