@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: aksbpa
+Version: 0.1.0
+Summary: Microsoft Azure Command-Line Tools Aksbpa Extension
+Home-page: https://github.com/mustafakaya/azure-cli-extensions/tree/master/src/aksbpa
+Author: Mustafa Kaya
+Author-email: mustafa.kaya@microsoft.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+Microsoft Azure CLI 'aksbpa' Extension
+==========================================
+
+This package is for the 'aksbpa' extension.
+i.e. 'az aksbpa'
+
+.. :changelog:
+
+Release History
+===============
+
+0.1.0
+++++++
+* Initial release.

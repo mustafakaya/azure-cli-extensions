@@ -1,0 +1,216 @@
+[
+  {
+    "category": "Reliability",
+    "recommendation_name": "Use NAT gateway for clusters that run workloads that make many concurrent outbound connections.",
+    "object_key": "CouldNotValidated",
+    "object.value": "azure"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use managed identities on cluster",
+    "object_key": "identity.type",
+    "object.value": "SystemAssigned"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use Microsoft Entra Workload ID with AKS to access Microsoft Entra protected resources",
+    "object_key": "securityProfile.workloadIdentity.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Secure network traffic to your API server by using private AKS cluster",
+    "object_key": "apiServerAccessProfile.enablePrivateCluster",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use private DNS zone for the API server",
+    "object_key": "apiServerAccessProfile.enablePrivateDNSZone",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use private link for the API server",
+    "object_key": "apiServerAccessProfile.enablePrivateLinkService",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use private link for the API server",
+    "object_key": "apiServerAccessProfile.enablePrivateLinkService",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use Microsoft Defender for Cloud for AKS",
+    "object_key": "addonProfiles.azuredefender.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use Microsoft Entra ID RBAC for AKS cluster access control",
+    "object_key": "aadProfile.managed", 
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Protect the API server by using Microsoft Entra ID RBAC",
+    "object_key": "aadProfile.enableAzureRBAC",
+    "object.value": "true"
+  },
+  {
+    "category": "Performance Efficiency",
+    "recommendation_name": "Use the latest Kubernetes version",
+    "object_key": "kubernetesVersion",
+    "object.value": "1.32.3|1.32.2|1.32.1|1.32.0|1.31.7|1.31.6|1.31.5|1.31.4"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Disable local accounts on the cluster",
+    "object_key": "disableLocalAccounts",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use the Secrets Store CSI Driver with Key Vault",
+    "object_key": "azureKeyvaultSecretsProvider.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use the open-source Microsoft Entra Workload ID",
+    "object_key": "securityProfile.workloadIdentity.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Security",
+    "recommendation_name": "Use Azure network policies",
+    "object_key": "networkPolicy",
+    "object.value": "azure"
+  },
+  {
+    "category": "Cost Optimization",
+    "recommendation_name": "Choose the right VM instance types for your AKS node pools.",
+    "object_key": "CouldNotValidated",
+    "object.value": "azure"
+  },
+  {
+    "category": "Cost Optimization",
+    "recommendation_name": "Use Spot VMs for non-production workloads.",
+    "object_key": "spotMaxPrice",
+    "object.value": "0.01"
+  },
+  {
+    "category": "Cost Optimization",
+    "recommendation_name": "Use the right VM size for your AKS node pools.",
+    "object_key": "CouldNotValidated",
+    "object.value": "azure"
+  },
+  {
+    "category": "Cost Optimization",
+    "recommendation_name": " Choose VMs based on the Arm64 architecture provides a better price-to-performance ratio.",
+    "object_key": "CouldNotValidated",
+    "object.value": "azure"
+  },
+  {
+    "category": "Cost Optimization",
+    "recommendation_name": "Use the AKS cost analysis add-on.",
+    "object_key": "metricsProfile.costAnalysis.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Use Kubernetes Event Driven Autoscaler (KEDA)",
+    "object_key": "workloadAutoScalerProfile.keda.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Use Azure Monitor for containers",
+    "object_key": "addonProfiles.azureMonitor.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Use Azure Log Analytics for AKS",
+    "object_key": "addonProfiles.omsagent.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Use Azure Policy for AKS",
+    "object_key": "addonProfiles.azurepolicy.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Secure clusters and pods by using Azure Policy",
+    "object_key": "addonProfiles.azurepolicy.enabled",
+    "object.value": "true"
+  },  
+  {
+    "category": "Reliability",
+    "recommendation_name": "Deploy AKS cluster across availability zones",
+    "query_file": "node_pool_check.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Isolate system and application pods",
+    "query_file": "isolate_system_pods.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Configure Azure CNI networking",
+    "object_key": "networkProfile.networkPlugin",
+    "object.value": "azure"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Enable the cluster auto-scaler",
+    "query_file": "enable_cluster_auto_scaler.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Back up Azure Kubernetes Service",
+    "query_file": "backup_azure_kubernetes_service.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Update AKS tier to Standard or Premium",
+    "object_key": "sku.tier",
+    "object.value": "Standard|Premium"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Enable AKS Monitoring",
+    "object_key": "addonProfiles.azureMonitorProfile.metrics.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Operational Excellence",
+    "recommendation_name": "Enable AKS Insights",
+    "object_key": "addonProfiles.omsagent.enabled",
+    "object.value": "true"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Use Ephemeral OS disks on AKS clusters",
+    "query_file": "Use_Ephemeral_OS_disks_on_AKS_clusters.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Enable and remediate Azure Policies configured for AKS",
+    "query_file": "Enable_and_remediate_Azure_Policies.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Configure csystem nodepool count",
+    "query_file": "Configure_system_nodepool_count.kql"
+  },
+  {
+    "category": "Reliability",
+    "recommendation_name": "Configure user nodepool count",
+    "query_file": "Configure_user_nodepool_count.kql"
+  }
+]
